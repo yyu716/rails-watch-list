@@ -1,0 +1,17 @@
+<div>
+<h3 class="my-4  text-center">
+<strong>Add your List</strong>
+</h3>
+
+
+<%= simple_form_for(@list) do |f| %>
+
+  <%= f.input :photo, as: :file %>
+  <%= f.input :name %>
+  <%= f.submit "Submit", class: 'btn btn-primary mt-2' %>
+
+<% end %>
+
+
+
+</div>
